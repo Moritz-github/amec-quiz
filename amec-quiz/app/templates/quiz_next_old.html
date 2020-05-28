@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if correct %}
+<h1>Deine Antwort war <a style="color:green">Korrekt</a>!</h1>
+{% else %}
+<h1>Deine Antwort war leider <a style="color:red" endline="">Falsch</a>!</h1>
+<h2>Die richtige Antwort wäre "{{session['answer']}}" gewesen!</h2>
+{% endif %}
+
+<a href="{{url_for('quiz')}}">Next Question</a>
+
+{% endblock %}LOEOFOEJFLOEOFOEJFLOEOFOEJFLOEOFOEJF
